@@ -53,6 +53,8 @@ class HomeView(TemplateView):
 
 def privacy(request):
     return render(request, 'instagram/privacy.html')
+def terms(request):
+    return render(request, 'instagram/privacy.html')
 
 class FacebookCallbackView(View):
     def get(self, request, *args, **kwargs):
@@ -63,14 +65,14 @@ class FacebookCallbackView(View):
             user = request.user  # Get the user
             # Handle user login or registration
             return redirect('instagram:home')  # Redirect to home after login
-        except Exception as e:
+        except Exception:
             return redirect('instagram:login')  # Handle any error
 
 class LoginSuccessView(View):
     def get(self, request, *args, **kwargs):
         messages.success(self.request, _("login with FB successfully"))
 
-        return HttpResponseRedirect(reverse('instagram:login'))
+        return HttpResponseRedirect(reverse('instagram:home'))
     
 class LoginErrorView(View):
     def get(self, request, *args, **kwargs):

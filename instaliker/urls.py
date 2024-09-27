@@ -20,6 +20,7 @@ urlpatterns = [
     #################################### Main Views ####################################
     path('', views.HomeView.as_view(), name='home'),
     path('privacy/', views.privacy, name='privacy'),
+    path('terms/', views.terms, name='terms'),
 
     #################################### Test View ####################################
     path('auth/facebook/callback/', views.FacebookCallbackView.as_view(), name='facebook_callback'),
