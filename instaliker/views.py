@@ -1,0 +1,51 @@
+from django.conf import settings
+
+from django.http import Http404, HttpResponse
+from django.shortcuts import get_object_or_404, redirect
+from django.urls import reverse_lazy
+
+from django.utils import translation
+from django.utils.translation import gettext as _
+
+from django.contrib.auth import views as auth_views
+from django.views.generic import TemplateView, CreateView, UpdateView, DeleteView, DetailView, ListView, RedirectView
+
+from django.contrib.auth.mixins import LoginRequiredMixin
+
+from django.contrib import messages
+
+from .forms import RegisterForm
+
+
+    
+#################################### Manage Account ####################################
+
+class RegisterView(CreateView):
+    form_class = RegisterForm
+    template_name = 'registration/register.html'
+    success_url = reverse_lazy('instagram:login')
+
+class PasswordChangeFormView(auth_views.PasswordChangeView):
+    def get_success_url(self) :
+        messages.success(self.request, _("Password's been changed successfully!"))
+        return reverse_lazy('instagram:login')
+
+class PasswordResetFormView(auth_views.PasswordResetView):
+    def get_success_url(self) :
+        messages.success(self.request, _("We've emailed you instructions for setting your password. You should receive the email shortly!"))
+        return reverse_lazy('instagram:password_reset')
+
+class PasswordResetConfirmView(auth_views.PasswordResetConfirmView):
+    def get_success_url(self):
+        messages.success(self.request, _("Password's been changed successfully, try to login"))
+        return reverse_lazy('instagram:login') 
+
+#################################### Main Views ####################################
+
+class HomeView(TemplateView):
+    template_name = 'instagram/home.html'
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs) 
+
+        context['greeting'] = _("Welcome to App Manager")
+        return context

@@ -1,0 +1,46 @@
+2024-09-27 13:13:45,365 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2024-09-27 13:13:45,365 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\mahmo\OneDrive\Documents\workspace\Web\instapy_env\Lib\site-packages\instabot\bot\bot.py
+2024-09-27 13:13:45,365 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2024-09-27 13:13:45,365 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2024-09-27 13:13:45,365 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2024-09-27 13:13:45,857 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [400]>
+2024-09-27 13:13:45,857 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"challenge_required","challenge":{"url":"https://www.instagram.com/accounts/suspended/","api_path":"/challenge/","hide_webview_header":true,"lock":true,"logout":false,"native_flow":true,"flow_render_type":0},"status":"fail"}'
+2024-09-27 13:13:45,857 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2024-09-27 13:13:45,857 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: challenge_required
+2024-09-27 13:13:45,857 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: {}
+2024-09-27 13:13:46,169 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [400]>
+2024-09-27 13:13:46,169 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"challenge_required","challenge":{"url":"https://www.instagram.com/accounts/suspended/","api_path":"/challenge/","hide_webview_header":true,"lock":true,"logout":false,"native_flow":true,"flow_render_type":0},"status":"fail"}'
+2024-09-27 13:13:46,169 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2024-09-27 13:13:46,169 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: challenge_required
+2024-09-27 13:13:46,169 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: {}
+2024-09-27 13:13:46,169 - instabot version: 0.117.0 (api) - INFO - Login flow failed, the cookie is broken. Relogin again.
+2024-09-27 13:13:46,174 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2024-09-27 13:13:46,174 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2024-09-27 13:13:46,174 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2024-09-27 13:13:46,482 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [400]>
+2024-09-27 13:13:46,482 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"challenge_required","challenge":{"url":"https://www.instagram.com/accounts/suspended/","api_path":"/challenge/","hide_webview_header":true,"lock":true,"logout":false,"native_flow":true,"flow_render_type":0},"status":"fail"}'
+2024-09-27 13:13:46,482 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2024-09-27 13:13:46,482 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: challenge_required
+2024-09-27 13:13:46,482 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: {}
+2024-09-27 13:13:46,777 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [400]>
+2024-09-27 13:13:46,777 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"challenge_required","challenge":{"url":"https://www.instagram.com/accounts/suspended/","api_path":"/challenge/","hide_webview_header":true,"lock":true,"logout":false,"native_flow":true,"flow_render_type":0},"status":"fail"}'
+2024-09-27 13:13:46,777 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2024-09-27 13:13:46,777 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: challenge_required
+2024-09-27 13:13:46,777 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: {}
+2024-09-27 13:13:47,085 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [400]>
+2024-09-27 13:13:47,085 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"challenge_required","challenge":{"url":"https://www.instagram.com/accounts/suspended/","api_path":"/challenge/","hide_webview_header":true,"lock":true,"logout":false,"native_flow":true,"flow_render_type":0},"status":"fail"}'
+2024-09-27 13:13:47,085 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2024-09-27 13:13:47,085 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: challenge_required
+2024-09-27 13:13:47,085 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: {}
+2024-09-27 13:13:47,393 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [400]>
+2024-09-27 13:13:47,393 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"challenge_required","challenge":{"url":"https://www.instagram.com/accounts/suspended/","api_path":"/challenge/","hide_webview_header":true,"lock":true,"logout":false,"native_flow":true,"flow_render_type":0},"status":"fail"}'
+2024-09-27 13:13:47,393 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2024-09-27 13:13:47,393 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: challenge_required
+2024-09-27 13:13:47,393 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: {}
+2024-09-27 13:13:47,702 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [400]>
+2024-09-27 13:13:47,702 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"challenge_required","challenge":{"url":"https://www.instagram.com/accounts/suspended/","api_path":"/challenge/","hide_webview_header":true,"lock":true,"logout":false,"native_flow":true,"flow_render_type":0},"status":"fail"}'
+2024-09-27 13:13:47,702 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2024-09-27 13:13:47,702 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: challenge_required
+2024-09-27 13:13:47,702 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: {}
+2024-09-27 13:13:47,707 - instabot version: 0.117.0 (api) - ERROR - Failed to login go to instagram and change your password
+2024-09-27 13:13:47,707 - instabot version: 0.117.0 (api) - INFO - Username or password is incorrect.

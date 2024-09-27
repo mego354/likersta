@@ -1,0 +1,83 @@
+{% extends "instagram/layout.html" %}
+{% load i18n %}
+{% load socialaccount %}
+{% block title %}{% trans "Login" %}{% endblock %}
+
+{% block body %}
+
+    <div class="mb-4 page_title_holder">
+        <h2 class="page_title">{% trans "Login" %}</h2>
+    </div> 
+
+    <form method="post" class="styled-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="button-container">
+            <button type="submit">{% trans "Login" %}</button>
+        </div>
+        <p class="mt-2">{% trans "Forget your password? " %}<a href={% url 'instagram:password_reset' %}>{% trans "Click here" %}</a></p>
+        <p class="mt-2">{% trans "Dont have an account? " %}<a href={% url 'instagram:register' %}>{% trans "Click here" %}</a></p>
+    </form>
+    {% comment %} <a href="{% provider_login_url 'Instaliker' %}">Log in with Instagram</a> {% endcomment %}
+    
+
+
+    
+<fb:login-button 
+scope="public_profile,email"
+onlogin="checkLoginState();">
+</fb:login-button>
+{% endblock %}
+
+{% block scripts %}
+  
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '8142404559161278',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v20.0'
+      });
+        
+      FB.AppEvents.logPageView();   
+        
+    };
+  
+    (
+        function(d, s, id)
+        {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+        (document, 'script', 'facebook-jssdk')
+    );
+
+
+    function checkLoginState() {
+        FB.getLoginStatus(function(response) {
+          statusChangeCallback(response);
+        });
+    }
+
+</script>
+  {% endblock %}
+
+  
+{% comment %} FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
+
+
+{
+    status: 'connected',
+    authResponse: {
+        accessToken: '...',
+        expiresIn:'...',
+        signedRequest:'...',
+        userID:'...'
+    }
+} {% endcomment %}
