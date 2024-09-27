@@ -1,0 +1,71 @@
+{% extends "instagram/layout.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block body %}
+    <!-- Privacy Policy Modal -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Privacy policy content here -->
+                    <h2>Introduction</h2>
+                    <p>At Borg Al-Arab Technological University ("we," "our," "us"), we value your privacy. This privacy policy outlines how we collect, use, and protect your personal information when using our attendance app ("App"). By using the App, you agree to the terms outlined below.</p>
+                
+                    <h2>Information We Collect</h2>
+                    <p>We collect personal data from students, staff, and administrators to provide the functionality of the App. The information we collect includes:</p>
+                    <ul>
+                        <li><strong>Student Information:</strong> Full name, student ID, email address, academic department, and year of study.</li>
+                        <li><strong>Attendance Data:</strong> Attendance records, class schedules, and lecture participation details.</li>
+                        <li><strong>Device Information:</strong> IP address, device type, operating system, and other related data collected for security and troubleshooting purposes.</li>
+                    </ul>
+                
+                    <h2>How We Use Your Information</h2>
+                    <p>We use your information to:</p>
+                    <ul>
+                        <li>Provide access to your lecture schedule and attendance data.</li>
+                        <li>Monitor and record your attendance for university purposes.</li>
+                        <li>Send notifications related to class schedules, attendance updates, and administrative notices.</li>
+                        <li>Improve the functionality and user experience of the App.</li>
+                    </ul>
+                
+                    <h2>Data Sharing</h2>
+                    <p>We do not sell, trade, or share your personal information with third parties except:</p>
+                    <ul>
+                        <li><strong>Within the University:</strong> To authorized university staff for administrative, academic, and record-keeping purposes.</li>
+                        <li><strong>Service Providers:</strong> To third-party service providers (e.g., hosting and IT services) that support the App’s functionality.</li>
+                    </ul>
+                
+                    <h2>Data Security</h2>
+                    <p>We are committed to ensuring the security of your personal data. We use technical, administrative, and physical security measures to protect your information from unauthorized access, disclosure, alteration, and destruction.</p>
+                
+                    <h2>Data Retention</h2>
+                    <p>Your personal information is retained for as long as necessary to fulfill the purpose of the App and the University’s academic needs. Afterward, it will be securely deleted or anonymized.</p>
+                
+                    <h2>Your Rights</h2>
+                    <p>You have the right to:</p>
+                    <ul>
+                        <li>Access the personal information we hold about you.</li>
+                        <li>Request corrections to inaccurate or incomplete information.</li>
+                        <li>Withdraw consent for certain uses of your data (e.g., marketing communications).</li>
+                        <li>Request deletion of your personal data, subject to University policies.</li>
+                    </ul>
+                
+                    <h2>Changes to the Privacy Policy</h2>
+                    <p>We may update this privacy policy from time to time. Any changes will be posted within the App, and you will be notified if significant changes are made.</p>
+                
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions regarding this policy, please contact us at:</p>
+                    <p>Email: <a href="mailto:mahmoudmegahd010000@gmail.com">mahmoudmegahd010000@gmail.com</a><br>
+                    <p>WhatsApp: <a href="https://wa.link/7xc1yy">01026004642</a><br>
+
+                </div>
+            </div>
+        </div>
+
+
+{% endblock %}

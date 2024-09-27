@@ -32,8 +32,8 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'instaliker', 
-    'django.contrib.sites', 
+    'instaliker',
+    'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -119,23 +119,33 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
-USE_I18N = True 
+USE_I18N = True
 USE_TZ = True
 
+################################
+
+# Define the static URL
 STATIC_URL = '/static/'
-STATIC_ROOT = 'attend/static'
+
+# Directory where Django will collect static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'instaliker', 'static')
+
+
+# For serving media files (if applicable)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+################################
 
 LOGIN_URL = "instagram:login"
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = LOGIN_URL
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com' 
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'mahmoudmegahd010000@gmail.com' 
+EMAIL_HOST_USER = 'mahmoudmegahd010000@gmail.com'
 EMAIL_HOST_PASSWORD = 'nuiovtbksdoxoemb'
 DEFAULT_FROM_EMAIL = 'instagram_liker Support team'
 

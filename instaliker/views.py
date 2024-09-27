@@ -1,7 +1,7 @@
 from django.conf import settings
 
 from django.http import Http404, HttpResponse
-from django.shortcuts import get_object_or_404, redirect
+from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse_lazy
 
 from django.utils import translation
@@ -49,3 +49,6 @@ class HomeView(TemplateView):
 
         context['greeting'] = _("Welcome to App Manager")
         return context
+
+def privacy(request):
+    return render(request, 'instagram/privacy.html')

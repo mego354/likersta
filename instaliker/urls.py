@@ -19,6 +19,7 @@ urlpatterns = [
 
     #################################### Main Views ####################################
     path('', views.HomeView.as_view(), name='home'),
+    path('privacy/', views.privacy, name='privacy'),
 
     #################################### Test View ####################################
 
