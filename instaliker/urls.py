@@ -22,7 +22,9 @@ urlpatterns = [
     path('privacy/', views.privacy, name='privacy'),
 
     #################################### Test View ####################################
-
+    path('auth/facebook/callback/', views.FacebookCallbackView.as_view(), name='facebook_callback'),
+    path('login/success/', views.LoginSuccessView.as_view(), name='login_success'),
+    path('login/error/', views.LoginErrorView.as_view(), name='login_error'),
 
     #################################### Accessibility ####################################
     # path('switch-language/', views.switch_language, name='switch_language'),
